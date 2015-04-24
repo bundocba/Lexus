@@ -1,0 +1,119 @@
+.title-random-main {
+  font-size: 40px;
+  padding-left: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 700;
+  border-bottom: 1px solid #ccc; 
+  margin-bottom: 50px;
+  margin-top: 25px;
+  background: url(../images/cong.jpg) no-repeat;
+  background-position: left;
+  font-size: 30px;
+  /*color: rgb(89, 89, 89);*/
+}
+.ke-doc {
+  width: 30%;
+  margin: 0 auto;
+  height: 2px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+.product-new:hover .detail-new{
+	display: block;
+	cursor: pointer;
+}
+.product-new:hover .model-product{
+	color: #C40000;
+	cursor: pointer;
+}
+.product-new a{
+	color: black;
+}
+.product-new{
+	min-height: 200px;
+	position: relative;
+}
+.product-new .img-product{
+	min-height: 110px;
+	text-align: center;
+}
+.img-product img {
+	max-height: 110px;
+
+}
+.model-product{
+	text-align: center;
+	font-size: 15px;
+}
+.model-product h4{
+	
+	font-size: 15px;
+}
+.detail-new{
+	position: absolute;
+	top: -45px;
+	left: 0;
+	width: 100%;
+	float:left;
+	border: 1px solid #ccc;
+	moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	  border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	  z-index: 10000;
+	  display: none;
+	  border-bottom: 4px solid #A82828;
+	
+}
+.detail-new .title-new{
+	text-align: center;
+ 	height: 30px;
+ 	padding-top: 10px;
+	background-color: white;
+ 	z-index: 99999999;
+ 	moz-border-radius: 5px 5px 0 0;
+	  -webkit-border-radius: 5px 5px 0 0;
+	  border-radius: 5px 5px 0 0;
+	  -moz-border-radius: 5px 5px 0 0;
+	  -webkit-border-radius: 5px 5px 0 0;
+
+}
+.img-tranfe{
+	height: 150px;
+	width: 100%;
+	background: transparent;
+	margin: 0;
+	padding: 0;
+}
+.price-new{
+	text-align: center;
+	font-size: 13px;
+	font-weight: 900;
+
+}
+span.glyphicon-chevron-right{
+	color: #A82828;
+}
+.title-new a{
+	color: black;
+}
+.price-new{
+	margin-bottom: 5px;
+	background-color: white;
+ 	z-index: 99999999;
+}
+.vcondition-new{
+	text-align: center;
+	font-size: 13px;
+	background-color: white;
+ 	z-index: 99999999;
+}
+.power-content {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  background-color: white;
+  z-index: 99999999;
+}

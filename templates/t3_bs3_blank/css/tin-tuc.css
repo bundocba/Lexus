@@ -1,0 +1,146 @@
+.header-tin-tuc{
+	width: 100%;
+	margin: 0 auto;
+	overflow-y: hidden;
+	max-height: 420px;
+	margin-bottom: 40px;
+}
+
+.header-tin-tuc::-webkit-scrollbar {
+
+    width: 11px;
+
+}
+
+.header-tin-tuc::-webkit-scrollbar-track {
+
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+
+    -webkit-border-radius: 11px;
+
+    border-radius: 11px;
+
+}
+
+.header-tin-tuc::-webkit-scrollbar-thumb {
+
+    -webkit-border-radius: 11px;
+
+    border-radius: 11px;
+
+    background: rgba(28,114,150,0.8);
+
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+
+}
+
+.header-tin-tuc::-webkit-scrollbar-thumb:window-inactive {
+
+    background: rgba(255,0,0,0.4);
+
+}
+
+.tin-tuc-product{
+	height: 400px;
+	width: 257px;
+	border: 1px solid #cccccc;
+	position: relative;
+}
+.header-tin-tuc ul{
+	margin: 0;
+	padding: 0;
+	width: 238%;
+}
+.header-tin-tuc ul > li{
+	height: 400px;
+	width: 257px;
+	margin-right: 9px;
+	display: inline-block;
+	float: left;
+
+}
+.img-tintuc{
+	border-bottom: 1px solid #cccccc;
+	float: left;
+}
+.img-tintuc img,.img-tintuc iframe{
+	max-width: 255px ;
+	max-height: 200px ;
+	min-height: 200px;
+	float: left
+}
+.title-tintuc{
+	width: 100%;
+	float: left;
+	background: url(../images/cong.jpg) no-repeat;
+  	background-position: left;
+  	padding-left: 25px;
+ 	padding-right: 20px;
+
+}
+.title-tintuc h3{
+	font-size: 14px !important;
+	margin: 10px 0;
+	font-weight: 600;
+	color: black;
+}
+.introtext{
+	width: 100%;
+	float:left;
+	padding-left: 25px;
+ 	padding-right: 20px;
+ 	text-align: justify;
+ 	max-height: 92px;
+ 	overflow: hidden;
+ 	
+}
+.introtext p{
+ 	font-size: 13px;
+ 	font-weight: 100;
+ 	color: rgb(65, 63, 63);
+}
+.readmore{
+	position: absolute;
+	bottom: 10px;
+    right: 10px;
+    width: 100px;
+}
+.readmore a{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: #c00;
+}
+.readmore a:hover,.readmore a:active{
+	font-weight: bold;
+	color: #c00;
+}
+.img-logo{
+	position: absolute;
+  bottom: 2px;
+  left: 2px;
+  width: 45px;
+  height: 34px;
+  background: url(../images/logo-img.png)no-repeat;
+}
+@media  (max-width: 1024px){
+	.header-tin-tuc ul > li {
+	  height: 400px;
+	  width: 237px;
+	  margin-right: 9px;
+	  display: inline-block;
+	  float: left;
+	}
+	.tin-tuc-product {
+	  height: 400px;
+	  width: 238px;
+	  border: 1px solid #cccccc;
+	  position: relative;
+	}
+	.img-tintuc img, .img-tintuc iframe {
+	  max-width: 236px;
+	  max-height: 200px;
+	  min-height: 200px;
+	  float: left;
+	}
+}

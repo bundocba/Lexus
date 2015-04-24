@@ -1,0 +1,85 @@
+.phu-kien-xe >div.left .detail-phu-kien >.title-tin-tuc-menu {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  width: 75%;
+  border-bottom: 2px solid white;
+}
+.phu-kien-xe >div.center{
+  border-right: 1px solid white;
+}
+ .tin-tuc-me-nu-title{
+  height: 150;
+  width: 100%;
+  background-color: #FAFAFA;
+  border-right: 1px solid #ccc;
+  padding: 20px 0 10px 20px;
+}
+ .tin-tuc-me-nu-title >.title{
+  text-align: left;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #696565;
+  width: 90%;
+  padding-bottom: 5px;
+}
+.tin-tuc-me-nu-title >.intro{
+  text-align: left;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 100;
+  color: #696565;
+  max-height: 168px;
+  min-height: 168px;
+  /*font-family: 'Times New Roman';*/
+} 
+.tin-tuc-me-nu-title >.intro a{
+    color: #696565;
+    line-height: 1.7;
+}
+.tin-tuc-me-nu-title >.intro a:hover ,.tin-tuc-me-nu-title >.intro a:active{
+    text-decoration:inherit; 
+}
+ .tin-tuc-me-nu-title >.intro h3{
+   font-size: 15px;
+   color: #696565;
+   font-weight: bold;
+   margin: 0;
+   margin-bottom: 5px;
+}
+ .tin-tuc-me-nu-title >.title h1{
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  color: #696565;
+  /*font-family: 'Times New Roman';*/
+}
+.media-img-menu{
+  width: 100%;
+  overflow: hidden;
+  
+}
+.media-img-menu >iframe{
+  width: 100%;
+  height: 168px;
+}
+
+.media-img-menu >img{
+  width: 100%;
+  height: 168px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.media-img-menu >img:hover{
+  -webkit-transform:scale(1.2);
+  transform:scale(1.2);
+}

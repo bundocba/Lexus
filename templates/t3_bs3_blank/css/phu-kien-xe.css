@@ -1,0 +1,171 @@
+.phu-kien-xe {
+	border: 1px solid white;
+	height: 400px;
+}
+.phu-kien-xe >div{
+	padding: 0;
+}
+.phu-kien-xe >div.left{
+	position: relative;
+}
+.phu-kien-xe >div.right .title-module-phu-kien{
+	height: 138px;
+	background-color: #F5F5F5;
+	opacity: 0.8;
+}
+.phu-kien-xe >div.right .title-module-phu-kien> .title{
+	color: #444;
+    font-size: 16px;
+    font-family: "Nobel-Bold",sans-serif;
+    text-align: left;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 20px 30px 0px 30px;
+}
+.phu-kien-xe >div.right .title-module-phu-kien> .info{
+	color: #444;
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+    padding: 20px 30px;
+}
+.phu-kien-xe >div.left .detail-phu-kien{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.phu-kien-xe >div.left .detail-phu-kien >.title{
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 auto;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    width: 60%;
+    border-bottom: 2px solid white;
+}
+.phu-kien-xe >div.left .detail-phu-kien >.intro{
+	color: white;
+	font-size: 13px;
+	text-align: center;
+    padding: 0px 20px 30px 20px;
+}
+.phu-kien-xe >div.left .detail-phu-kien >.more{
+	width: 60%;
+	height: 40px;
+	border: 1px solid white;
+	margin: 0 auto;
+	padding-top: 8px;
+	text-align: center;
+}
+.phu-kien-xe >div.left .detail-phu-kien >.more a{
+	color: white;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.phu-kien-xe >div.left img{
+	height: 399px;
+  	width: 100%;
+}
+.banner-phu-kien-album div.custom p img{
+	width: 100%;
+
+}
+#phu-kien-album{
+	width: 100%;
+	margin: 0;
+}
+#phu-kien-album ul{
+	margin: 0;
+
+}
+#phu-kien-album ul li{
+	display: inline-block;
+	width: 24%;
+}
+.product-phu-kien{
+	min-height: 200px;
+	border: 1px solid #ccc;
+	float: left;
+	-webkit-box-shadow: 0px 0px 56px -14px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 0px 56px -14px rgba(0,0,0,0.15);
+	box-shadow: 0px 0px 56px -14px rgba(0,0,0,0.15);
+	background: url(../images/logo-img.png)no-repeat;
+	background-position:98% 98%;
+}
+
+.product-phu-kien .title{
+	width: 100%;
+  	float: left;
+  	padding: 20px 0 0px 35px;
+  	background: url(../images/cong.jpg) no-repeat;
+  	background-position: 0 100%;
+  	  background-color: white
+
+}
+.product-phu-kien .title h1{
+	line-height: 24px;
+ 	font-family: "arial";
+	font-size: 20px;
+	font-weight: 900;
+	letter-spacing: 0.2em;
+	margin: 0;
+	text-transform: uppercase;
+	color: black;
+}
+.product-phu-kien .description{
+	width: 100%;
+	float: left;
+	min-height: 100px;
+	max-height: 200px;
+	overflow: hidden;
+	padding-bottom: 10px;
+	padding-left: 35px;
+	padding-right: 20px;
+	
+}
+.product-phu-kien .description p{
+	font-size: 14px;
+	font-weight: 100;
+	color: black;
+
+}
+.product-phu-kien:hover .img-phukien img,.product-phu-kien:active .img-phukien img{
+	-webkit-transform:scale(1.3);
+	transform:scale(1.3);
+}
+.img-phukien{
+	overflow: hidden;
+	width: 100%;
+	max-height: 265px;
+}
+.img-phukien img{
+	width: 100%;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.product-phu-kien-detail{
+	padding: 10px;
+}
+.product-phu-kien-detail .title-detail{
+	padding-left: 0;
+	background-color: transparent;
+	background: url();
+}
+.product-phu-kien-detail .description{
+	padding-left: 0;
+	background-color: transparent;
+}
+.product-phu-kien-detail:hover .title-detail h1,.product-phu-kien-detail:hover .description p,.product-phu-kien-detail:active .title-detail h1,.product-phu-kien-detail:active .description p{
+	color: white;
+
+}
+.product-phu-kien-detail:hover{
+	background-color: #488DAA;
+}

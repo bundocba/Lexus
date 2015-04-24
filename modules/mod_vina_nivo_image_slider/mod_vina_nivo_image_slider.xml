@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2" client="site" method="upgrade">
+	
+<!-- Author Block -->
+	<name>Vina Nivo Image Slider</name>
+	<author>VinaGecko.com</author>
+	<creationDate>October 18, 2014</creationDate>
+	<copyright>Copyright (C) 2014 VinaGecko.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenseses/gpl-3.0.html GNU/GPL</license>
+	<authorEmail>support@vinagecko.com</authorEmail>
+	<authorUrl>http://VinaGecko.com</authorUrl>
+	<version>1.2.0</version>
+	
+	<description>
+		<![CDATA[<div style="border: 1px solid red; border-radius: 7px; padding: 10px;">
+		<strong>Vina Nivo Image Slider</strong> is a free responsive slideshow module for <strong>Joomla 3.x</strong>. It allows you to easily create an <strong>image slider using Nivo Slider</strong> - Nivo Slider is considered as a most popular jQuery slider plugin in the world. It is beautiful and very easy to use, more over, it is full free!<br>
+		<strong>VinaGecko.com</strong> - Premium <a href="http://vinagecko.com/joomla-modules" target="_blank">Joomla Modules</a>, <a href="http://vinagecko.com/joomla-plugins" target="_blank">Joomla Plugins</a>, <a href="http://vinagecko.com/joomla-templates" target="_blank">Joomla Templates</a>.
+		</div>]]>
+	</description>
+
+<!-- Files upload Block -->	
+	<files>
+		<filename module="mod_vina_nivo_image_slider">mod_vina_nivo_image_slider.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>samples</folder>
+		<folder>libs</folder>
+		<folder>assets</folder>
+		<folder>languages</folder>
+		<folder>tmpl</folder>
+	</files>
+
+<!-- Languages Block -->
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_vina_nivo_image_slider.ini</language>
+	</languages>
+	
+<!-- Config Block -->
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_vina_nivo_image_slider/libs/elements">
+			<fieldset name="basic">
+				<field 
+                    name="moduleStyle" 
+                    type="list" 
+                    default="default" 
+                    label="MOD_VINA_NIVO_ISLIDER_STYLE" 
+                    description="MOD_VINA_NIVO_ISLIDER_STYLE_DESC">
+                        <option value="default">Default</option>
+                        <option value="light">Light</option>
+						<option value="dark">Dark</option>
+						<option value="bar">Bar</option>
+                </field>
+				<field
+					name="moduleWidth"
+					type="text"
+					default="600px"
+					label="MOD_VINA_NIVO_ISLIDER_MAX_WIDTH"
+					description="MOD_VINA_NIVO_ISLIDER_MAX_WIDTH_DESC" />
+				<field
+					name="moduleHeight"
+					type="text"
+					default="auto"
+					label="MOD_VINA_NIVO_ISLIDER_HEIGHT"
+					description="MOD_VINA_NIVO_ISLIDER_HEIGHT_DESC" />
+				<field
+					name="moduleMargin"
+					type="text"
+					default="0px auto 0px auto"
+					label="MOD_VINA_NIVO_MODULE_MARGIN"
+					description="MOD_VINA_NIVO_MODULE_MARGIN_DESC" />
+				<field
+					name="modulePadding"
+					type="text"
+					default="0px 0px 0px 0px"
+					label="MOD_VINA_NIVO_MODULE_PADDING"
+					description="MOD_VINA_NIVO_MODULE_PADDING_DESC" />
+				<field
+					name="bgImage"
+					type="media" 
+					label="MOD_VINA_NIVO_BGIMAGE" 
+					description="MOD_VINA_NIVO_BGIMAGE_DESC" 
+					size="30"
+					default="" />
+				<field 
+					name="isBgColor" 
+					type="radio" 
+					default="0" 
+					class="btn-group btn-group-yesno"
+					label="MOD_VINA_NIVO_USE_BACKGROUND_COLOR" 
+					description="MOD_VINA_NIVO_USE_BACKGROUND_COLOR_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+                </field>
+				<field
+					name="bgColor"
+					type="color" 
+					label="MOD_VINA_NIVO_BACKGROUND_COLOR" 
+					description="MOD_VINA_NIVO_BACKGROUND_COLOR_DESC" 
+					size="30"
+					default="#000000" />
+				<field 
+                    name="resizeImage" 
+                    type="radio" 
+                    default="1" 
+					class="btn-group btn-group-yesno"
+                    label="MOD_VINA_NIVO_ISLIDER_RESIZE_IMAGE" 
+                    description="MOD_VINA_NIVO_ISLIDER_RESIZE_IMAGE_DESC">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+				<field
+					name="imageWidth"
+					type="text"
+					default="600"
+					label="MOD_VINA_NIVO_ISLIDER_IMAGE_WIDTH"
+					description="MOD_VINA_NIVO_ISLIDER_IMAGE_WIDTH_DESC" />
+				<field
+					name="imageHeight"
+					type="text"
+					default="300"
+					label="MOD_VINA_NIVO_ISLIDER_IMAGE_HEIGHT"
+					description="MOD_VINA_NIVO_ISLIDER_IMAGE_HEIGHT_DESC" />
+				<field 
+                    name="controlNavThumbs" 
+                    type="radio" 
+                    default="0" 
+					class="btn-group btn-group-yesno"
+                    label="MOD_VINA_NIVO_ISLIDER_NAV_THUMBS" 
+                    description="MOD_VINA_NIVO_ISLIDER_NAV_THUMBS_DESC">
+                        <option value="0">JHIDE</option>
+                        <option value="1">JSHOW</option>
+                </field>
+				<field
+					name="simageWidth"
+					type="text"
+					default="120"
+					label="MOD_VINA_NIVO_ISLIDER_SIMAGE_WIDTH"
+					description="MOD_VINA_NIVO_ISLIDER_SIMAGE_WIDTH_DESC" />
+				<field
+					name="simageHeight"
+					type="text"
+					default="60"
+					label="MOD_VINA_NIVO_ISLIDER_SIMAGE_HEIGHT"
+					description="MOD_VINA_NIVO_ISLIDER_SIMAGE_HEIGHT" />
+				<field 
+                    name="controlNav" 
+                    type="radio" 
+                    default="1" 
+					class="btn-group btn-group-yesno"
+                    label="MOD_VINA_NIVO_ISLIDER_CONTROL_NAV" 
+                    description="MOD_VINA_NIVO_ISLIDER_CONTROL_NAV_DESC">
+                        <option value="0">JHIDE</option>
+                        <option value="1">JSHOW</option>
+                </field>
+				<field 
+                    name="directionNav" 
+                    type="radio" 
+                    default="1" 
+					class="btn-group btn-group-yesno"
+                    label="MOD_VINA_NIVO_ISLIDER_DIRECTION_NAV" 
+                    description="MOD_VINA_NIVO_ISLIDER_DIRECTION_NAV_DESC">
+                        <option value="0">JHIDE</option>
+                        <option value="1">JSHOW</option>
+                </field>
+				<field 
+                    name="effect" 
+                    type="list" 
+                    default="random" 
+                    label="MOD_VINA_NIVO_ISLIDER_EFFECT" 
+                    description="MOD_VINA_NIVO_ISLIDER_EFFECT_DESC">
+                        <option value="random">Random</option>
+                        <option value="sliceDownRight">Slice Down Right</option>
+						<option value="sliceDownLeft">Slice Down Left</option>
+						<option value="sliceUpRight">Slice Up Right</option>
+						<option value="sliceUpLeft">Slice Up Left</option>
+						<option value="sliceUpDown">Slice Up Down</option>
+						<option value="sliceUpDownLeft">Slice Up Down Left</option>
+						<option value="fold">Fold</option>
+						<option value="fade">Fade</option>
+						<option value="boxRandom">Box Random</option>
+						<option value="boxRain">Box Rain</option>
+						<option value="boxRainReverse">Box Rain Reverse</option>
+						<option value="boxRainGrow">Box Rain Grow</option>
+						<option value="boxRainGrowReverse">Box Rain Grow Reverse</option>
+                </field>
+				<field
+					name="slices"
+					type="text"
+					default="15"
+					label="MOD_VINA_NIVO_ISLIDER_SLICES"
+					description="MOD_VINA_NIVO_ISLIDER_SLICES_DESC" />
+				<field
+					name="boxCols"
+					type="text"
+					default="8"
+					label="MOD_VINA_NIVO_ISLIDER_BOX_COLS"
+					description="MOD_VINA_NIVO_ISLIDER_BOX_COLS_DESC" />
+				<field
+					name="boxRows"
+					type="text"
+					default="4"
+					label="MOD_VINA_NIVO_ISLIDER_BOX_ROWS"
+					description="MOD_VINA_NIVO_ISLIDER_BOX_ROWS_DESC" />
+				<field 
+                    name="manualAdvance" 
+                    type="radio" 
+                    default="1" 
+					class="btn-group btn-group-yesno"
+                    label="MOD_VINA_NIVO_ISLIDER_AUTOPLAY" 
+                    description="MOD_VINA_NIVO_ISLIDER_AUTOPLAY_DESC">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+				<field
+					name="animSpeed"
+					type="text"
+					default="500"
+					label="MOD_VINA_NIVO_ISLIDER_ANIM_SPEED"
+					description="MOD_VINA_NIVO_ISLIDER_ANIM_SPEED_DESC" />
+				<field
+					name="pauseTime"
+					type="text"
+					default="3000"
+					label="MOD_VINA_NIVO_ISLIDER_PAUSE_TIME"
+					description="MOD_VINA_NIVO_ISLIDER_PAUSE_TIME_DESC" />
+				<field
+					name="startSlide"
+					type="text"
+					default="0"
+					label="MOD_VINA_NIVO_ISLIDER_START_AT"
+					description="MOD_VINA_NIVO_ISLIDER_START_AT_DESC" />
+				<field 
+                    name="randomStart" 
+                    type="radio" 
+                    default="0" 
+					class="btn-group btn-group-yesno"
+                    label="MOD_VINA_NIVO_ISLIDER_RANDOM_START" 
+                    description="MOD_VINA_NIVO_ISLIDER_RANDOM_START_DESC">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+				<field 
+                    name="pauseOnHover" 
+                    type="radio" 
+                    default="1" 
+					class="btn-group btn-group-yesno"
+                    label="MOD_VINA_NIVO_ISLIDER_PAUSE_ON_HOVER" 
+                    description="MOD_VINA_NIVO_ISLIDER_PAUSE_ON_HOVER_DESC">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+			</fieldset>
+			
+			<fieldset name="slider">
+				<field name="slides" type="data" label="Slides" description="" filter="raw" />
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+						<option value="1">JGLOBAL_USE_GLOBAL</option>
+						<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+						<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
