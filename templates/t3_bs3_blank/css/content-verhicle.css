@@ -12,6 +12,9 @@
   font-size: 30px;
   /*color: rgb(89, 89, 89);*/
 }
+.title-random-main a{
+	color: black;
+}
 .ke-doc {
   width: 30%;
   margin: 0 auto;

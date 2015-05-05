@@ -43,8 +43,8 @@ class JConfig {
 	public $caching = '0';
 	public $cache_handler = 'file';
 	public $cachetime = '15';
-	public $MetaDesc = '';
-	public $MetaKeys = '';
+	public $MetaDesc = 'Lexus Việt Nam , Mua bán xe chất lượng nhất Việt Nam';
+	public $MetaKeys = 'Lexus , Viet Nam , Xe hoi , 4 bánh , Siêu Xe ,Xe củ , Phụ Tùng';
 	public $MetaTitle = '1';
 	public $MetaAuthor = '1';
 	public $MetaVersion = '0';

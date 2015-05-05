@@ -45,7 +45,10 @@ defined('_JEXEC') or die;
 
   <?php $this->loadBlock('spotlight-2') ?>
 
+
   <?php $this->loadBlock('navhelper') ?>
+  
+  <?php $this->loadBlock('spotlight-3') ?>
 
   <?php $this->loadBlock('footer') ?>
 
@@ -75,7 +78,27 @@ defined('_JEXEC') or die;
       });
 
       });
-  $('div.custom p img').addClass('img-responsive');   
+  $('div.custom p img').addClass('img-responsive'); 
+  //scroll div
+  $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    }); 
+  $('.navbar-nav>li>a').click(function(event) {
+        var c='<?php echo JUri::root();?>';
+        var value=$(this).attr("href");
+        var url = c+value; 
+        // alert(url) ;
+        $(location).attr('href',url);
+        
+  }); 
   //selector đến menu cần làm việc
   var TopFixMenu = $("#t3-mainnav");
   // dùng sự kiện cuộn chuột để bắt thông tin đã cuộn được chiều dài là bao nhiêu.

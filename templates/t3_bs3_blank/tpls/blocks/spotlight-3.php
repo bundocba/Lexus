@@ -8,11 +8,11 @@
 defined('_JEXEC') or die;
 ?>
 
-<?php if ($this->countModules('navhelper')) : ?>
+<?php if ($this->countModules('tin-tuc-cong-nghe')>0) : ?>
 	<!-- NAV HELPER -->
-	<nav class="wrap t3-navhelper <?php $this->_c('navhelper') ?>" id="tintuc">
+	<nav class="wrap t3-navhelper <?php $this->_c('navhelper') ?>">
 		<div class="container">
-			<jdoc:include type="modules" name="<?php $this->_p('navhelper') ?>" />
+			<jdoc:include type="modules" name="tin-tuc-cong-nghe" />
 		</div>
 	</nav>
 	<!-- //NAV HELPER -->

@@ -7,7 +7,7 @@ defined('_JEXEC') or die('Restricted access');
 ?>
 <div class="new-content-verhicle">
 	<div class="title-random-main">
-	Tin Tức
+		<a href="<?php echo $items[0]->categoryLink;?>">Tin Tức</a>
 	</div>
 	<!-- <div class="ke-doc"></div> -->
 	<div class="row header-tin-tuc">
